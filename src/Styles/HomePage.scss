@@ -1,0 +1,486 @@
+.wrap-content-manager{
+  overflow: hidden;
+  height: 100dvh;
+  padding-bottom: 100px !important;
+}
+
+@media (max-width: 1299px) {
+  .wrap-content-manager{
+   padding-bottom: 130px !important;
+  }
+  .manager-card-container {
+    min-height: 82dvh !important;
+  } 
+}
+
+.wrap-bandwidth-loading {
+  display: flex;
+  justify-content: center;
+}
+
+.bandwidth-loading {
+  min-width: 260px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--dark-blue-10);
+}
+.bandwidth-loading .label {
+  color: var(--dark-blue);
+  font-size: var(--font-16);
+  font-weight: 700;
+  text-align: center;
+  padding: 4px 0 4px 0;
+  background: var(--dark-blue-10);
+  border-bottom: 1px solid var(--dark-blue-10);
+}
+.bandwidth-loading .wrap-desc {
+  font-size: var(--font-15);
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.desc-up {
+  color: var(--green-d);
+}
+.desc-down {
+  color: var(--red-d);
+}
+.btn-actions-addnew {
+  height: 32px;
+  font-weight: 600;
+  padding: 4px 16px;
+  color: var(--green-d);
+  background: var(--white);
+  font-size: var(--font-14);
+  border: solid 1px var(--green-d);
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+}
+.btn-actions-addnew:hover {
+  border: solid 1px var(--green-d);
+  background: var(--green-d);
+  color: var(--white);
+  opacity: 0.8;
+}
+.btn-actions-normarl {
+  padding: 0 12px;
+  font-size: var(--font-14);
+  height: 32px;
+  border-radius: 10px;
+  border: solid 1px var(--text-primary-36);
+  color: var(--dark-blue);
+  background: var(--white);
+  font-weight: 600;
+  transition: all 0.2s ease-out;
+}
+.btn-actions-normarl:hover {
+  border: solid 1px var(--text-primary-36);
+  background: var(--dark-blue);
+  color: var(--white);
+  opacity: 0.8;
+}
+.btn-actions-stop {
+  padding: 4px 16px;
+  font-size: var(--font-14);
+  height: 32px;
+  border: none;
+  font-weight: 600;
+  color: var(--red-d);
+  border-radius: 10px;
+  background: var(--white);
+  border: 1px solid var(--red-d);
+  transition: all 0.2s ease-out;
+}
+.btn-actions-stop:hover {
+  background: var(--red-d);
+  color: var(--white);
+  border: 1px solid var(--red-d);
+}
+.btn-actions-delete {
+  padding: 4px 16px;
+  font-size: var(--font-14);
+  height: 32px;
+  border: none;
+  border-radius: 10px;
+  color: var(--white);
+  background: var(--red-d);
+  border: 1px solid var(--red-d);
+  font-weight: 600;
+  transition: all 0.2s ease-out;
+}
+.btn-actions-delete:hover {
+  background: var(--white);
+  color: var(--red-d);
+  border: 1px solid var(--red-d);
+}
+.options-icon {
+  font-size: var(--font-18);
+  padding: 0px 10px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.options-icon.ant-btn {
+  height: 24px;
+}
+.options-icon:hover {
+  transform: scale(0.96);
+}
+.icon-change {
+  border-color: var(--blue-d);
+  background: var(--blue-d);
+  color: var(--white);
+}
+.icon-edit {
+  border-color: var(--green-d);
+  background: var(--green-d);
+  color: var(--white);
+}
+.icon-stop {
+  border-color: var(--red-d);
+  background: var(--red-d);
+  color: var(--white);
+}
+.icon-delete {
+  border-color: var(--red-d);
+  background: var(--red-d);
+  color: var(--white);
+}
+.manager-card-container {
+  min-height: 85dvh;
+  box-shadow: 0 1px 6px #d3dbe3;
+  border-radius: 12px;
+}
+
+.form-item-datepicker .ant-picker {
+  height: 36px;
+  width: 100%;
+}
+
+// button item ----------------------
+.proxy-on {
+  background: var(--white);
+  border-color: var(--green-d);
+  color: #14bd7f;
+}
+.proxy-on.ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover {
+  background: var(--green-d);
+  border-color: var(--green-d);
+  color: var(--white);
+}
+.proxy-off {
+  background: var(--white);
+  border-color: var(--red-d);
+  color: var(--red-d);
+}
+.proxy-off.ant-btn-variant-outlined:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  background: var(--red-d);
+  border-color: var(--red-d);
+  color: var(--white);
+}
+section.status-color {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 2px 16px;
+  .status-box-color {
+    width: 18px;
+    height: 10px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}
+
+// Popconfirm ================================================================================
+.ant-popover .ant-popover-inner {
+  padding: 16px;
+}
+.ant-popconfirm .ant-popconfirm-message {
+  margin-bottom: 20px;
+}
+.ant-popconfirm .ant-popconfirm-message .ant-popconfirm-title {
+  color: var(--text-primary);
+  font-size: var(--font-16);
+  font-weight: 600 !important;
+}
+.ant-popconfirm .ant-popconfirm-buttons button {
+  margin-inline-start: 16px;
+}
+.ant-btn-sm {
+  font-size: 14px;
+  height: 30px;
+  padding: 0px 7px;
+  border-radius: 8px;
+}
+.manager-cancel-btn {
+  border-color: var(--red-d);
+  color: var(--red-d);
+}
+.manager-cancel-btn.ant-btn-variant-outlined:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  border-color: var(--red-d);
+}
+.manager-cancel-btn.ant-btn-variant-outlined:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  background: var(--red-d);
+  color: white;
+}
+.manager-submit-btn {
+  background: var(--green-d);
+  border: none;
+}
+.manager-submit-btn.ant-btn-variant-solid:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  background: var(--green-d);
+}
+// Blur overlay - spin ========================================
+.device-blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; // none || flex
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255 255 255 / 16%);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+.spinner {
+  border: 4px solid rgb(0 0 0 / 9%);
+  border-top: 4px solid var(--blue-d);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.9s ease-out infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// modal add new ========================================
+.addnew-container {
+  background: #f4f4f5;
+  border-radius: 12px;
+  padding: 20px 16px 46px;
+  margin: 20px;
+}
+.suffix-text {
+  background: var(--text-primary);
+  border-color: #dbdde5;
+  padding: 6px 12px;
+  color: var(--white);
+  border-width: 1px;
+  border-style: solid;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  height: 36px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.suffix-text:hover {
+  opacity: 0.86;
+}
+.checkbox-auto-reconnect {
+  margin-top: 36px;
+}
+
+// ModalAutoChangeIP ========================================
+.wrap-content-autochangeip-modal {
+  min-height: 180px;
+  padding: 16px 0 0 0;
+}
+.card-changeip.ant-card {
+  background: #f4f4f5;
+  min-height: 164px;
+}
+.card-changeip > .ant-radio-wrapper {
+  background: var(--red-d);
+}
+.card-changeip > .ant-radio-wrapper .ant-radio {
+  display: none;
+}
+.autochangeip-radio
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background: var(--dark-blue-10);
+  color: var(--dark-blue) !important;
+  border-color: var(--dark-blue-18) !important;
+}
+
+.autochangeip-radio
+  .ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  )::before {
+  background-color: var(--dark-blue-18);
+}
+.autochangeip-radio
+  .ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  ):hover::before {
+  background-color: var(--dark-blue-18);
+}
+.autochangeip-radio .ant-radio-button-wrapper {
+  color: var(--text-unselected);
+  font-weight: 600;
+}
+.autochangeip-radio .ant-radio-button-wrapper:hover {
+  color: var(--dark-blue);
+  border-color: var(--dark-blue-18) !important;
+}
+.form-item-autochange-ip .ant-input-number-affix-wrapper {
+  width: 100%;
+  padding: 0;
+}
+.form-item-autochange-ip
+  .ant-input-number-affix-wrapper
+  .ant-input-number-suffix {
+  margin: 0;
+}
+.form-item-autochange-ip .ant-input-number-outlined:hover {
+  border-color: var(--blue-gray);
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+.btn-suffix-autochange-ip.ant-btn {
+  height: 34px;
+  border: none;
+  font-weight: 600;
+  color: var(--dark-blue);
+  font-size: var(--font-15);
+  background: var(--blue-gray);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 0 12px !important;
+}
+
+// modal proxylist ========================================
+.header-proxylist {
+  border-bottom: 1px solid var(--text-primary-36);
+  padding: 0 0 8px 0;
+}
+.proxylist-container {
+  border-radius: 12px;
+  padding: 0;
+  margin: 20px;
+}
+.proxylist-container .proxy-list-body {
+  height: 360px;
+  margin: 12px 0 0 0;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+}
+.radio-title {
+  font-size: var(--font-16);
+  font-weight: 600;
+  color: var(--charcoal-d);
+}
+.list-body {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+  color: var(--charcoal-d);
+  font-weight: 400;
+  font-size: var(--font-15);
+}
+
+// ================================================================= RESPONSIVE =============================================================
+
+// MOBILE ==============================================================
+@media (max-width: 375px) {
+  // modal addnew ========================================
+  .addnew-container {
+    height: 380px;
+  }
+}
+
+// @media (max-width: 399px) {
+// }
+
+// @media (min-width: 400px) {
+// }
+
+@media (max-width: 739px) {
+  .btn-actions-addnew,
+  .btn-actions-normarl,
+  .btn-actions-stop,
+  .btn-actions-delete {
+    padding: 4px 10px;
+    font-size: var(--font-13);
+    height: 32px;
+  }
+  .ant-table-wrapper .ant-table {
+    font-size: var(--font-12);
+  }
+  .options-icon {
+    font-size: var(--font-14);
+    padding: 0px 8px;
+  }
+
+  // modal proxylist ========================================
+  .radio-title {
+    font-size: var(--font-15);
+  }
+  .list-body {
+    font-size: var(--font-14);
+  }
+  .proxylist-container .proxy-list-body {
+    height: 400px;
+  }
+
+  // modal addnew ========================================
+  .addnew-container {
+    height: 500px;
+    margin: 10px 10px 0 10px;
+  }
+  .checkbox-auto-reconnect {
+    margin-top: 0px;
+  }
+}
+
+// TABLET ==============================================================
+@media (min-width: 740px) {
+  .manager-card-container .ant-card-body {
+    padding: 30px 24px 24px;
+    min-height: 100%;
+  }
+  .options-icon {
+    font-size: var(--font-14);
+    padding: 0px 8px;
+  }
+}
+
+@media (min-width: 740px) and (min-width: 1024px) {
+}
+
+// PC ==============================================================
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) and (min-width: 1039px) {
+}
+
+@media (min-width: 1040px) {
+}

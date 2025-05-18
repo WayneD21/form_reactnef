@@ -1,0 +1,771 @@
+.main-layout {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.wrap-container-d {
+  padding: 80px 0 100px 0;
+}
+
+.wrap-container-d .wrap-content {
+  margin: 0 auto;
+  border-radius: 12px;
+  background: transparent;
+}
+
+/* Cart title ==========================================================================================================*/
+.card-title {
+  font-size: var(--font-20);
+  text-transform: capitalize;
+  color: var(--charcoal-d);
+}
+
+.card-title .title-text {
+  margin-left: 10px;
+  line-height: 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--charcoal-d);
+  font-weight: 700;
+}
+
+.card-title .title-text::before {
+  position: absolute;
+  content: "";
+  left: -0.6rem;
+  top: 0.4rem;
+  height: 1.15rem;
+  width: 0.24rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    to bottom,
+    rgb(229 107 166) 50%,
+    rgb(68 136 219) 50%
+  );
+}
+
+.card-content-container.ant-card > .ant-card-head {
+  min-height: 50px;
+  padding: 0 16px;
+  color: var(--charcoal-d);
+}
+
+/* IMAGE ==========================================================================================================*/
+.ant-image-preview {
+  backdrop-filter: blur(4px);
+}
+
+.ant-image-preview-img {
+  border-radius: 2px;
+}
+
+/* SCROLLBAR ============================================================================== */
+.modal-scrollnef {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+.modal-scrollnef::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-scrollnef::-webkit-scrollbar-track {
+  background: var(--white-0);
+  border-radius: 99px;
+}
+
+.modal-scrollnef::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    -45deg,
+    var(--text-primary),
+    var(--text-primary-36)
+  );
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+/* Input ==========================================================================================================*/
+.form-input-normal .ant-row {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 2px;
+}
+.form-input-normal .ant-input-affix-wrapper {
+  padding: 4px 16px;
+}
+.form-input-normal {
+  margin-bottom: 0;
+}
+.ant-form-item {
+  margin: 0;
+}
+.form-input-suffix .ant-input-affix-wrapper {
+  padding: 4px 0 4px 16px;
+}
+.form-input-normal {
+  margin-bottom: 0;
+}
+.ant-form-item {
+  margin: 0;
+}
+.form-input-normal .ant-form-item-label {
+  text-transform: initial;
+  color: var(--text-primary);
+  text-align: start;
+}
+.ant-form-vertical
+  .ant-form-item:not(.ant-form-item-horizontal)
+  .ant-form-item-label {
+  padding: 0 0 2px;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: var(--font-15);
+}
+.form-input-normal .ant-input-outlined:hover {
+  background: var(--bg-table);
+}
+.suffix-last-text {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-left: none !important;
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+  padding: 6px 12px;
+  color: var(--white);
+  border-width: 1px;
+  border-style: solid;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  height: 36px;
+  cursor: default;
+  transition: all 0.2s linear;
+}
+
+/* BUTTON ==========================================================================================================*/
+.btn-primary {
+  padding: 4px 16px;
+  font-weight: 500;
+  font-size: var(--font-14);
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.2s ease-in;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.btn-close {
+  padding: 4px 16px;
+  color: var(--red-d);
+  background: var(--white);
+  border: solid 1px var(--red-d);
+  font-weight: 600;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+  height: 34px;
+}
+.btn-close:hover {
+  border: solid 1px var(--red-d);
+  color: var(--white);
+  background: var(--red-d);
+  opacity: 0.9;
+}
+.btn-save {
+  padding: 4px 16px;
+  font-size: var(--font-15);
+  height: 36px;
+  color: var(--white);
+  background: var(--dark-blue);
+  border: solid 1px var(--dark-blue);
+  font-weight: 600;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+}
+.btn-save:hover {
+  border: solid 1px var(--dark-blue);
+  color: var(--white);
+  background: var(--dark-blue);
+  opacity: 0.86;
+}
+.btn-AddNew {
+  padding: 4px 16px;
+  font-size: var(--font-15);
+  height: 34px;
+  color: var(--white);
+  background: var(--green-d);
+  border: solid 1px var(--green-d);
+  font-weight: 600;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+}
+.btn-AddNew:hover {
+  border: solid 1px var(--green-d);
+  color: var(--white);
+  background: var(--green-d);
+  opacity: 0.86;
+}
+.btn-save-modal {
+  padding: 4px 20px;
+  font-size: var(--font-14);
+  height: 34px;
+  color: var(--white);
+  background: var(--purple-d);
+  border: solid 1px var(--purple-d);
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+.btn-save-modal:hover {
+  color: var(--white);
+  background: var(--purple-d);
+  border: solid 1px var(--purple-d);
+  opacity: 0.9;
+}
+
+/* BUTTON suffix ==========================================================================================================*/
+.btn-suffix {
+  background: var(--violet-nhef);
+  color: var(--white);
+  font-size: var(--font-15);
+  height: 36px;
+  border: none;
+  padding: 0 24px !important;
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+  opacity: 0.9;
+}
+.btn-suffix:hover {
+  opacity: 1;
+}
+.btn-suffix-text {
+  background: var(--violet-nhef);
+  color: var(--white);
+  font-size: var(--font-15);
+  height: 36px;
+  border: none;
+  padding: 6px 12px !important;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+}
+.show-btn {
+  padding: 6px 12px;
+  background: var(--red-d);
+  color: var(--white);
+  border: 1px solid var(--red-d);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+}
+.update-btn {
+  height: 34px;
+  background: var(--blue-d);
+  color: var(--white);
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+.update-btn:hover {
+  border: solid 1px var(--blue-d);
+  color: var(--white);
+  background: var(--blue-d);
+  opacity: 0.86;
+}
+.docs-api-btn {
+  height: 34px;
+  background: var(--text-primary-70);
+  color: var(--white);
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+.docs-api-btn:hover {
+  border: solid 1px var(--text-primary);
+  color: var(--white);
+  background: var(--text-primary);
+  opacity: 0.86;
+}
+.btn-reboot {
+  padding: 4px 16px;
+  font-size: var(--font-15);
+  height: 36px;
+  color: var(--white);
+  background: var(--red-d);
+  font-weight: 600;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+}
+.btn-reboot:hover {
+  border: solid 1px var(--red-d);
+  color: var(--white);
+  background: var(--red-d);
+  opacity: 0.86;
+}
+
+/* select ==========================================================================================================*/
+.select-primary.ant-select-single .ant-select-selector {
+  border-radius: 10px;
+}
+
+/* search ==========================================================================================================*/
+.search-port {
+  height: 32px;
+  border-radius: 10px;
+  width: 120px;
+}
+
+/* Radio ==============================================================================  */
+.authorization-radio
+  .ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  )::before {
+  background: none;
+}
+
+.authorization-radio
+  .ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  ):hover::before {
+  background: none;
+}
+
+.authorization-radio
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: var(--bg-primaryD) !important;
+}
+
+.authorization-radio .ant-radio-button-wrapper-checked {
+  background: var(--grd-primary) !important;
+  border-color: var(--bg-primaryD) !important;
+}
+
+.authorization-radio .ant-radio-button-wrapper-checked span {
+  color: var(--white) !important;
+}
+
+.authorization-radio .ant-radio-button-wrapper:not(:first-child)::before {
+  background: transparent;
+}
+
+.authorization-radio .ant-radio-button-wrapper:hover {
+  color: var(--white);
+  background: var(--grd-primary);
+}
+
+.authorization-radio .ant-radio-button-wrapper {
+  border: 1px solid #d9d9d9 !important;
+  font-weight: 500;
+}
+
+/* TABLE ==========================================================================================================*/
+.wrap-table-d {
+  width: 100%;
+  white-space: nowrap;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Tùy chỉnh padding cho tất cả các ô trong bảng */
+.table-d .ant-table-cell {
+  padding: 8px 10px 8px 10px !important;
+}
+
+.table-d .ant-table-thead > tr > th,
+.table-d .ant-table-tbody > tr > td {
+  color: rgb(79 83 100);
+}
+
+.wrap-table-d .table-d .ant-table {
+  border: 1px solid #e8e8e8;
+  border-bottom: none;
+}
+
+.ant-table-thead > tr > th {
+  border-color: #e8e8e8 !important;
+  background: #f8f9fa !important;
+}
+
+.dtr-hidden {
+  display: table-cell !important;
+}
+
+.wrap-switch .switch-custom {
+  background: var(--green-d);
+}
+
+.wrap-switch .ant-switch {
+  background: var(--red-d);
+}
+
+.wrap-switch .ant-switch-checked {
+  background: var(--green-d);
+}
+
+.wrap-switch .ant-switch:hover {
+  background: var(--red-d);
+}
+
+.wrap-switch .ant-switch-checked:hover {
+  background: var(--green-d) !important;
+}
+
+/* checkbox ============================================================================== */
+.custom-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--white);
+  border-color: var(--white);
+}
+
+.custom-checkbox .ant-checkbox .ant-checkbox-inner {
+  width: 18px;
+  height: 18px;
+}
+
+.custom-checkbox .ant-checkbox .ant-checkbox-inner:after {
+  top: 50%;
+  inset-inline-start: 28%;
+}
+
+/* MODAL ==========================================================================================================*/
+.ant-modal-root .ant-modal-mask {
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* modal ======================================== */
+.wrap-content-modal {
+  padding: 30px 20px;
+  min-height: 380px;
+}
+
+.wrap-content-modal-change-authen {
+  padding: 30px 20px;
+  min-height: 280px;
+}
+
+.wrap-content-modal-firewall {
+  padding: 30px 20px;
+  min-height: 160px;
+}
+
+.modal-country {
+  width: 450px !important;
+}
+
+.modal-350 {
+  width: 350px !important;
+}
+
+.modal-450 {
+  width: 450px !important;
+}
+
+.modal-550 {
+  width: 550px !important;
+}
+
+.modal-650 {
+  width: 650px !important;
+}
+
+.modal-850 {
+  width: 850px !important;
+}
+
+.modal-1000 {
+  width: 1000px !important;
+}
+
+.modal-1100 {
+  width: 1100px !important;
+}
+
+.modal-1200 {
+  width: 1200px !important;
+}
+
+.modal-1600 {
+  width: 1600px !important;
+}
+
+.modal-1700 {
+  width: 1700px !important;
+}
+
+.modal-1800 {
+  width: 1800px !important;
+}
+
+.modal-d .ant-modal-header {
+  margin: 0;
+  padding: 10px 12px;
+  border-bottom: 1px solid #ccc;
+}
+.modal-d .ant-modal-body {
+  padding: 0px;
+}
+
+.body-modal-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 20px 20px 30px;
+}
+
+/* SCROLLBAR ============================================================================== */
+.body-modal-scrollnef {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+.body-modal-scrollnef::-webkit-scrollbar {
+  width: 6px;
+}
+
+.body-modal-scrollnef::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.body-modal-scrollnef::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    -45deg,
+    var(--text-primary),
+    var(--text-primary-36)
+  );
+  border-radius: 10px;
+  border: 1px solid var(--white);
+}
+
+/* box gray ------------------------- */
+.box-gray {
+  background: var(--gray);
+  border-radius: 10px;
+}
+.box-gray.ant-input {
+  transition: all 0.2s ease-out;
+  padding: 4px 16px;
+}
+.box-gray.ant-input-outlined:hover {
+  border: 1px solid var(--blue-gray);
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+.box-gray.ant-input-outlined:focus,
+:where(.css-dev-only-do-not-override-7w7yuk).ant-input-outlined:focus-within {
+  border: 1px solid var(--blue-gray);
+}
+.box-gray.ant-select-single .ant-select-selector {
+  border-radius: 10px;
+}
+
+/* box white ------------------------- */
+.box-white {
+  background: var(--white);
+  border-radius: 10px;
+}
+.box-white.ant-input {
+  padding: 4px 16px;
+}
+.box-white.ant-input-outlined:hover {
+  border: 1px solid var(--blue-gray);
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+.box-white.ant-select-single:not(.ant-select-customize-input)
+  .ant-select-selector {
+  padding: 0 16px;
+}
+.box-white.ant-select-single .ant-select-selector {
+  border-radius: 10px;
+}
+
+/* input number  ====================================================================================================== */
+.form-item-number .ant-input-number {
+  width: 100%;
+  border-radius: 15px;
+}
+.form-item-number .ant-input-number .ant-input-number-input {
+  padding: 4px 16px;
+}
+.form-item-number .ant-input-number .ant-input-number-input {
+  height: 34px;
+}
+.form-item-number .ant-input-number-outlined:focus,
+.form-item-number .ant-input-number-outlined:focus-within {
+  background-color: var(--white);
+  border: 1px solid var(--blue-gray);
+}
+
+/* label ------------------------------- */
+.label-primary {
+  font-size: var(--font-15);
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: capitalize;
+  user-select: none; /* Ngăn chọn văn bản */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: auto; /* Vẫn cho click, nhưng không cho select */
+}
+
+/* Modal ============================================================================== */
+.modal-d .ant-modal-content {
+  padding: 0;
+}
+.modal-d .ant-modal-footer {
+  padding: 16px 20px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*  ================================================================= RESPONSIVE ============================================================= */
+
+/* MOBILE ============================================================== */
+/* @media (max-width: 375px) {
+}
+
+@media (max-width: 399px) {
+} */
+
+/* @media (min-width: 400px) {
+} */
+
+@media (max-width: 739px) {
+  .wrap-container-d {
+    padding: 68px 0 100px 0;
+  }
+  .manager-card-container .ant-card-body {
+    padding: 16px 10px 10px 10px;
+  }
+  .card-title {
+    font-size: var(--font-16);
+  }
+  .btn-primary {
+    padding: 4px 14px;
+    font-size: var(--font-12);
+  }
+  /* table ============================================= */
+  .wrap-table-d {
+    padding: 0;
+    height: 400px;
+  }
+
+  /* MODAL viewfull ======================================== */
+  .wrap-content-modal {
+    margin: 12px 10px;
+  }
+  /* Modal ============================================= */
+  .modal-d .ant-modal-header {
+    margin: 0;
+    padding: 6px 12px;
+    border-bottom: 1px solid #ccc;
+  }
+  .ant-modal .ant-modal-close {
+    top: 8px;
+  }
+  .modal-d .ant-modal-footer {
+    padding: 12px 16px;
+  }
+  .form-input-normal .ant-input-affix-wrapper {
+    padding: 4px 11px;
+  }
+}
+
+/* ============================================================== */
+
+@media (max-width: 991px) {
+  .wrap-container-d .wrap-content {
+    padding: 12px 8px;
+  }
+}
+@media (min-width: 992px) {
+  .wrap-container-d .wrap-content {
+    padding: 12px;
+  }
+}
+
+/* ============================================================== */
+/* @media (max-width: 1039px) {
+  .wrap-container-d .wrap-content {
+    padding: 12px;
+  }
+} */
+
+/* @media (min-width: 1024px) and (min-width: 1170px) {
+  .wrap-container-d .wrap-content {
+    width: 100%;
+    padding: 16px 12px;
+  }
+} */
+
+
+@media (max-width: 1279px) {
+  .wrap-cards > .bg-card-item {
+    width: 100%;
+  }
+  .header-container .header-layout {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1299px) {
+  .wrap-container-d .wrap-content {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .wrap-container-d .wrap-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1350px) {
+  .wrap-container-d .wrap-content {
+    width: 1300px;
+    padding: 12px;
+  }
+}
+
+/* Thanh cuộn đẹp */
+.scrollClass{
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-left: 5px !important;
+  padding-bottom: 5px !important;
+  padding-bottom: 2px !important;
+}
+
+.scrollClass::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scrollClass::-webkit-scrollbar-thumb {
+  background-color: #9094a0;
+  border-radius: 30px;
+}
+
+.scrollClass::-webkit-scrollbar-thumb:hover {
+  background-color: #9094a0;
+}
+
+.scrollClass::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.ant-table-body {
+  overflow: auto !important;
+  max-height: calc(-300px + 95vh) !important;
+}

@@ -1,0 +1,113 @@
+.login-content {
+  display: flex;
+  justify-content: center; /* căn giữa theo chiều ngang */
+  align-items: center;     /* căn giữa theo chiều dọc */
+  height: 100vh;           /* full chiều cao màn hình */
+  background: #f0f2f5;     /* hoặc ảnh nền tuỳ bạn */
+}
+
+.login-form-nef {
+  width: 400px; 
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+  background-color: rgba(255,255,255,0.25);
+  backdrop-filter: blur(4px);
+}
+
+
+.wrap-login .login-content::before {
+  --size: 10px; /* Reduced outer glow size */
+  z-index: -2;
+  filter: blur(2vmin); /* Reduced blur */
+  animation: blur-animation 3s ease-in-out alternate infinite; /* Faster blur animation */
+}
+
+/* Faster blur animation */
+@keyframes blur-animation {
+  to {
+    filter: blur(3vmin);
+    transform: scale(1.05);
+  }
+}
+
+/* Faster gradient animation */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+// form-item =========================================
+.login-content .ant-input-affix-wrapper {
+  border-radius: 10px;
+}
+.login-content .ant-input-outlined:hover {
+  border-color: var(--blue-ice);
+}
+.login-content .ant-input-outlined:focus,
+.login-content .ant-input-outlined:focus-within {
+  border-color: var(--blue-ice);
+}
+
+.login-form-nef .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.login-form-nef .ant-checkbox-label {
+  color: var(--than);
+  font-weight: 500;
+}
+.login-form-nef .forgot-password {
+  color: var(--red-d);
+  font-weight: 500;
+}
+
+.login-form-nef .forgot-password:hover {
+  opacity: 0.8;
+  color: var(--red-d);
+}
+// =========================================
+.wrap-login .ant-pro-form-login-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  background: transparent;
+}
+
+.ant-pro-form-login-top {
+  text-align: center;
+  justify-items: center;
+}
+
+.ant-pro-form-login-header {
+  height: 100px;
+  width: 100px;
+  display: revert;
+  margin-bottom: 20px;
+}
+
+.ant-pro-form-login-logo {
+  width: 80px;
+  height: 80px;
+  margin-inline-end: 16px;
+  vertical-align: top;
+}
+
+// button submit =====================================================================================
+.login-form-nef .ant-btn {
+  background: var(--grd-initial-balance);
+  border: none;
+}
+.login-form-nef .ant-btn:hover {
+  background: var(--grd-initial-balance) !important;
+  border: none;
+}
